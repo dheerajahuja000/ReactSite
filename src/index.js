@@ -19,7 +19,9 @@ function Header() {
 }
 
 function Footer() {
-  return <footer> © 2021 Ziroll development. All rights reserved.</footer>;
+  return (
+    <footer className="footer"> © 2021 Ziroll development. All rights reserved.</footer>
+  );
 }
 
 function MainContent() {
