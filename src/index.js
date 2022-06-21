@@ -2,21 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reactLogo from "./logo192.png";
 
-const element = (
-  <div>
-    <img src={reactLogo} width="40px" />
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100K stars on GitHub</li>
-      <li>Is maintained by Facebook</li> <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
+function PageComponent() {
+  return (
+    <div>
+      <header>
+        <nav>
+          <img src={reactLogo} width="40px" />
+        </nav>
+      </header>
 
+      <h1>Heading</h1>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
 
+      <footer>  © 2021 Ziroll development. All rights reserved.</footer>
+    </div>
+  );
+}
 
-);
-
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(<PageComponent />, document.getElementById("root"));
