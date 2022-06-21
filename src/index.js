@@ -2,15 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reactLogo from "./logo192.png";
 
-function PageComponent() {
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src={reactLogo} width="40px" />
+      </nav>
+    </header>
+  );
+}
+
+function Footer() {
+  return <footer> © 2021 Ziroll development. All rights reserved.</footer>;
+}
+
+function MainContent() {
   return (
     <div>
-      <header>
-        <nav>
-          <img src={reactLogo} width="40px" />
-        </nav>
-      </header>
-
       <h1>Heading</h1>
       <ul>
         <li></li>
@@ -18,8 +26,16 @@ function PageComponent() {
         <li></li>
         <li></li>
       </ul>
+    </div>
+  );
+}
 
-      <footer>  © 2021 Ziroll development. All rights reserved.</footer>
+function PageComponent() {
+  return (
+    <div>
+      <Header />
+      <MainContent/>
+      <Footer />
     </div>
   );
 }
